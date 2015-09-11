@@ -4,10 +4,11 @@ GEOR.Addons.coordinatesquery = function (map, feature, services) {
     GEOR.waiter.show();
     this.map = map;
     this.feature = feature;
-    this.services = services;  
-    this.pixel = this.map.getPixelFromLonLat(new OpenLayers.LonLat(this.feature.geometry.x,this.feature.geometry.y));             
+    this.services = services;
+    this.projection = map.getProjection();
+    this.pixel = this.map.getPixelFromLonLat(new OpenLayers.LonLat(this.feature.geometry.x,this.feature.geometry.y));         
     //this.feature.coordinates = {lon:feature.geometry.x, lat:feature.geometry.y, alt : []};
-    this.projfeature = new OpenLayers.Geometry.Point(this.feature.geometry.x,this.feature.geometry.y).transform(new OpenLayers.Projection("EPSG:2154"), new OpenLayers.Projection("EPSG:4326"));
+    this.projfeature = new OpenLayers.Geometry.Point(this.feature.geometry.x,this.feature.geometry.y).transform(new OpenLayers.Projection(this.projection), new OpenLayers.Projection("EPSG:4326"));
     this.feature.coordinates = {lon:this.projfeature.x, lat:this.projfeature.y, alt : []};
     
     
