@@ -117,7 +117,7 @@ GEOR.Addons.coordinatesquery.prototype = (function () {
             if (features.length > 0) {
               for (var i = 0; i < features.length; i++) {
                 var metadata = this.getMetadata(features[i].gml.featureType);
-                this.feature.coordinates.alt.push({label:metadata.label, metadata:metadata.metadata,z: Ext.util.Format.number(features[i].attributes.altitude,"0.00")});
+                this.feature.coordinates.alt.push({label:metadata.label, metadata:metadata.metadata,z: Ext.util.Format.number(features[i].attributes.GRAY_INDEX,"0.00")});
               }
               
               this.popup.update({
