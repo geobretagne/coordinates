@@ -29,7 +29,7 @@ GEOR.Addons.coordinatesquery = function (map, feature, services) {
           '<div class="lonlat" ><p>lon : {lon}</p>',
           '<p>lat : {lat}</p></div>', 
           '<tpl for="alt">',          
-          '<div class="metadata"><p class="alignleft">z : {z} - {label}</p><p class="alignright"><a href="{metadata}" target="_blank"><img src="app/addons/coordinates/img/notes.png" /></a></p></div>',
+          '<div class="metadata"><p class="alignleft">z : {z} - {label}</p><p class="alignright"><a href="{metadata}" target="_blank"><img src="ws/addons/coordinates/img/notes.png" /></a></p></div>',
           '</tpl>', 
           '</tpl>' 
         ), 
@@ -118,7 +118,7 @@ GEOR.Addons.coordinatesquery.prototype = (function () {
             if (features.length > 0) {
               for (var i = 0; i < features.length; i++) {
                 var metadata = this.getMetadata(features[i].gml.featureType);
-                this.feature.coordinates.alt.push({label:metadata.label, metadata:metadata.metadata,z: Ext.util.Format.number(features[i].attributes.altitude,"0.00")});
+                this.feature.coordinates.alt.push({label:metadata.label, metadata:metadata.metadata,z: Ext.util.Format.number(features[i].attributes[Object.keys(features[i].attributes)[0]],"0.00")});
               }
               
               this.popup.update({
