@@ -1,0 +1,20 @@
+[{
+            "id": "coordinates_0",
+            "name": "coordinates",
+            "enabled": "true",
+            "activated" : "true",
+            "title": {
+                "en": "Coordinates",
+                "es": "Coordonnées",
+                "fr": "Coordonnées xyz"
+            },
+            "description": {
+                "fr": "Récupérer les coordonnéeses x, y, z en un point"
+            },
+            "options": {
+                "placement": "bottom",
+                "showintoolmenu": false,
+                "autoactivate": true
+            },
+            "thumbnail": "img/thumbnail.png"
+        }]
