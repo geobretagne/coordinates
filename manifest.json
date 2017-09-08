@@ -11,7 +11,7 @@
         "position": 3,
         "services": [
                     {
-                        "url": "http://geobretagne.fr/geoserver/ref/wms",
+                        "url": "https://geobretagne.fr/geoserver/alti/wms",
                         "layers": [
                             {
                                 "name": "REG_BD_ALTI",
@@ -21,7 +21,7 @@
                         ]
                     },
                     {
-                        "url": "http://geobretagne.fr/geoserver/alti/wms",
+                        "url": "https://geobretagne.fr/geoserver/alti/wms",
                         "layers": [
                             {
                                 "name": "litto3d",
@@ -31,7 +31,7 @@
                         ]
                     },
                     {
-                        "url": "http://geobretagne.fr/geoserver/alti/wms",
+                        "url": "https://geobretagne.fr/geoserver/alti/wms",
                         "layers": [
                             {
                                 "name": "mnt5so",
@@ -47,7 +47,7 @@
                     }
                 ],
         "showintoolmenu": true,
-        "autoactivate": false
+        "autoactivate": true
     },
     "i18n": {
         "en": {},

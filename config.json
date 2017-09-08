@@ -1,13 +1,13 @@
 [{
-            "id": "coordinates_0",
-            "name": "coordinates",
-            "enabled": "true",
-            "activated" : "true",
+            "id": "geob_coordinates_0",
+            "name": "geob_coordinates",
+            "enabled": "true",            
             "title": {
                 "en": "Coordinates",
                 "es": "Coordonnées",
                 "fr": "Coordonnées xyz"
             },
+            "preloaded": "true",
             "description": {
                 "fr": "Récupérer les coordonnéeses x, y, z en un point"
             },

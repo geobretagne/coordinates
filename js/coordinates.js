@@ -1,6 +1,6 @@
 Ext.namespace("GEOR.Addons");
 
-GEOR.Addons.coordinates = Ext.extend(GEOR.Addons.Base, {    
+GEOR.Addons.geob_coordinates = Ext.extend(GEOR.Addons.Base, {    
     control: null,
     item: null,
     layer: null,
@@ -55,7 +55,7 @@ GEOR.Addons.coordinates = Ext.extend(GEOR.Addons.Base, {
             var lang = OpenLayers.Lang.getCode();
             title = record.get("title")[lang];
              var _style = {
-                externalGraphic: "ws/addons/coordinates/img/target.png",
+                externalGraphic: "ws/addons/geob_coordinates/img/target.png",
                 graphicWidth: 16,
                 graphicHeight: 16
                 };

@@ -29,7 +29,7 @@ GEOR.Addons.coordinatesquery = function (map, feature, services) {
           '<div class="lonlat" ><p>lon : {lon}</p>',
           '<p>lat : {lat}</p></div>', 
           '<tpl for="alt">',          
-          '<div class="metadata"><p class="alignleft">z : {z} - {label}</p><p class="alignright"><a href="{metadata}" target="_blank"><img src="ws/addons/coordinates/img/notes.png" /></a></p></div>',
+          '<div class="metadata"><p class="alignleft">z : {z} - {label}</p><p class="alignright"><a href="{metadata}" target="_blank"><img src="ws/addons/geob_coordinates/img/notes.png" /></a></p></div>',
           '</tpl>', 
           '</tpl>' 
         ), 
